@@ -5,7 +5,7 @@ const reader = readline.createInterface({
   output: process.stdout,
 });
 
-
+"2" + 2
 
 reader.question("What would you like to calculate? ", function(input){
 	tokens = input.split(' ');
@@ -31,6 +31,11 @@ reader.question("What would you like to calculate? ", function(input){
 
 	if (mathSymbol === "|") {
 		console.log(Math.sqrt(num1))
+	};
+
+	if (mathSymbol === "%") {
+		let percentage = (num1 / num2) * 100
+		console.log(percentage + "%")
 	};
 
 	// This line closes the connection to the command line interface.
