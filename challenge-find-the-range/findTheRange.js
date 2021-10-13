@@ -27,3 +27,6 @@ findMax = (array) => {
 
 console.log("Min:", findMin(array))
 console.log("Max:", findMax(array))
+
+console.log("Min():", Math.min(...array))
+console.log("Max():", Math.max(...array))
