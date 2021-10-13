@@ -5,8 +5,6 @@ const reader = readline.createInterface({
   output: process.stdout,
 });
 
-"2" + 2
-
 reader.question("What would you like to calculate? ", function(input){
 	tokens = input.split(' ');
 	mathSymbol = tokens[0];
